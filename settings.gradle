@@ -1,0 +1,2 @@
+include ':app', ':abstract_libs'
+rootProject.name='Abstract Class Java Practice'
