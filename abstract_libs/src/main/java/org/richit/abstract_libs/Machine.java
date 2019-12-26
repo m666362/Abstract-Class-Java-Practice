@@ -1,6 +1,6 @@
 package org.richit.abstract_libs;
 
-public class Machine {
+public abstract class Machine {
 
     private int id = 7;
 
@@ -10,5 +10,15 @@ public class Machine {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public abstract void start();
+    public abstract void doStuff();
+    public abstract void shutDown();
+
+    public void run(){
+        start();
+        doStuff();
+        shutDown();
     }
 }
